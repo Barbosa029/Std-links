@@ -1,0 +1,38 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+ body {
+     font-family: 'Inter', sans-serif;
+     background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+     /* Fundo degradê escuro (chumbo) */
+     color: #f9fafb;
+     /* Texto claro */
+     min-height: 100vh;
+ }
+
+ /* Previne rolagem enquanto a animação inicial acontece */
+ .no-scroll {
+     overflow: hidden;
+ }
+
+ /* Efeito de hover suave nos cartões */
+ .link-card {
+     transition: all 0.3s ease;
+     border: 2px solid transparent;
+ }
+
+ .link-card:hover {
+     transform: scale(1.02);
+     border-color: #ff8400;
+     box-shadow: 0 10px 15px -3px rgba(255, 132, 0, 0.15), 0 4px 6px -2px rgba(255, 132, 0, 0.1);
+ }
+
+ .link-card:hover .link-icon,
+ .link-card:hover .link-text {
+     color: #ff8400;
+     transition: color 0.3s ease;
+ }
+
+ .link-icon,
+ .link-text {
+     transition: color 0.3s ease;
+ }
